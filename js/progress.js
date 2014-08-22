@@ -17,7 +17,7 @@ Progress.prototype.render = function() {
 	else
 		this.elm.parent.className = 'progress';
 
-	this.elm.text.innerText = Math.round(this.percent) + '%';
+	this.elm.text.textContent = this.elm.text.innerText = Math.round(this.percent) + '%';
 }
 Progress.prototype.add = function(amount) {
 	var amountInt = parseInt(amount);
