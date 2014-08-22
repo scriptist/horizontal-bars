@@ -13,12 +13,29 @@ html {
 	.bar {
 		background: #afd7e6;
 		height: 40px;
-
 		transition: width 0.2s;
+
+		position: relative;
+
+		&:after {
+			background: linear-gradient(to bottom,  rgba(0,0,0,0.01) 0%,rgba(0,0,0,0.25) 100%);;
+			content: '';
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
 	}
 
-	&.over .bar {
-		background: red;
+	&.over {
+		.bar {
+			background: red;
+		}
+		.text {
+			color: white;
+		}
 	}
 
 	.text {
@@ -30,6 +47,7 @@ html {
 		right: 0;
 		bottom: 0;
 		left: 0;
+		z-index: 1;
 	}
 }
 

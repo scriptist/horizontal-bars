@@ -16,12 +16,27 @@ html {
   background: #afd7e6;
   height: 40px;
   transition: width 0.2s;
+  position: relative;
 }
 /* line 20, ../scss/style.scss */
+.progress .bar:after {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.25) 100%);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* line 33, ../scss/style.scss */
 .progress.over .bar {
   background: red;
 }
-/* line 24, ../scss/style.scss */
+/* line 36, ../scss/style.scss */
+.progress.over .text {
+  color: white;
+}
+/* line 41, ../scss/style.scss */
 .progress .text {
   text-align: center;
   padding-top: 10px;
@@ -30,9 +45,10 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
-/* line 36, ../scss/style.scss */
+/* line 54, ../scss/style.scss */
 .info {
   background: #eee;
   border: 1px dashed #ccc;
