@@ -1,0 +1,44 @@
+/* line 1, ../scss/style.scss */
+html {
+  text-align: center;
+}
+
+/* line 5, ../scss/style.scss */
+.progress {
+  border: 1px solid #ccc;
+  margin: 0 auto 10px;
+  max-width: 100%;
+  width: 300px;
+  position: relative;
+}
+/* line 13, ../scss/style.scss */
+.progress .bar {
+  background: #afd7e6;
+  height: 40px;
+  transition: width 0.2s;
+}
+/* line 20, ../scss/style.scss */
+.progress.over .bar {
+  background: red;
+}
+/* line 24, ../scss/style.scss */
+.progress .text {
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 36, ../scss/style.scss */
+.info {
+  background: #eee;
+  border: 1px dashed #ccc;
+  line-height: 1.4;
+  margin: 4em auto 1em;
+  max-width: 800px;
+  font-size: .8em;
+  padding: 1em;
+}

@@ -7,8 +7,39 @@
 </head>
 <body>
 	
-	Hello World
+	<h1>Progress Bars Demo</h1>
 
+	<div class="progress" id="progress1">
+		<div class="text"></div>
+		<div class="bar"></div>
+	</div>
+
+	<div class="progress" id="progress2">
+		<div class="text"></div>
+		<div class="bar"></div>
+	</div>
+
+	<div class="progress" id="progress3">
+		<div class="text"></div>
+		<div class="bar"></div>
+	</div>
+
+	<select name="item">
+		<option value="progress1">#progress1</option>
+		<option value="progress2">#progress2</option>
+		<option value="progress3">#progress3</option>
+	</select>
+	<button type="button" class="modifyItem" name="-25">-25</button>
+	<button type="button" class="modifyItem" name="-10">-10</button>
+	<button type="button" class="modifyItem" name="+10">+10</button>
+	<button type="button" class="modifyItem" name="+25">+25</button>
+
+	<div class="info">
+		Browser compatbility: all modern browsers &amp; IE9+ (due to use of Element.addEventListener(). <br />
+		If IE8 was required, it could be replaced by Element.onclick)
+	</div>
+
+	<script src="js/progress.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
